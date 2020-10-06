@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+       
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {border-color: black; background-color: #0065af;;}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {border-color: black; background-color: #0065af;;}
+.btn-circle {
+    width: 25px;
+    height: 25px;
+    padding: 4px 5px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+    background-color: #0065af;
+    color: white;
+}
+        </style>
+        
+    <title>Formulario</title>
+    <!-- Autor: Andrés Camilo Rodriguez Miramag -->
+</head>
+<body style="background-color: #e4e4e4;" >
+    <div class="row py-3 text-white" style="background-color: #0065af;">
+        <div class="col d-flex justify-content-start ml-5">
+            <i class="fa fa-file mr-2" style='font-size:30px;color: #ffffff'></i>Logo & Brand Name
+            
+        </div>
+        </div>
+    <div class="row py-2 bg-white border d-flex justify-content-center">
+        
+        <div class="mx-2"><i class='far fa-check-circle' style='font-size:24px;color: #0065af'></i> Step One</div>
+        <div class="mx-2"><button type="button" class="btn btn-default btn-circle">2</button> Step Two</div>
+        <div class="mx-2"><button type="button" class="btn btn-default btn-circle">3</button> Step Three</div>
+        
+    </div>
+    <div class="container-fluid" >
+        <form>
+        
+        
+        <div class="row justify-content-center px-4 py-4 mb-4 ">
+            
+            <div class="col-12 order-2 col-sm-12 order-sm-2 col-md-5 order-md-1 col-lg-7 order-lg-1 bg-white mx-4" >
+                <br>
+                    <h5><strong>Personal data</strong></h5>
+                <div class="row col-12">
+                    <div class="col-7 col-sm-7 col-md-4">
+                        <label for="name"><small>Full name</small></label><br>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="col-7 col-sm-7 col-md-4">
+                        <label for="name"><small>Id number</small></label><br>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="col-7 col-sm-7 col-md-4">
+                        <label for="name"><small>Driving license issued year</small></label><br>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                </div>
+                <div class="row col-12">
+                    <div class="col-7 col-sm-7 col-md-4">
+                        <label for="name"><small>Email</small></label><br>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="col-7 col-sm-7 col-md-4">
+                        <label for="name"><small>Phone number</small></label><br>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="col-7 col-sm-7 col-md-4">
+                        <label for="name"><small>Age of the youngest driver</small></label><br>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                </div>
+                <br><h5><strong>Car data</strong></h5>
+                <div class="row col-12">
+                    <div class="col-7 col-sm-7 col-md-4">
+                        <label for="name"><small>Car model code</small></label><br>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="col-7 col-sm-7 col-md-4">
+                        <label for="name"><small>Car license plate</small></label><br>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="col-7 col-sm-7 col-md-4">
+                        <label for="name"><small>Car make and model</small></label><br>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                </div>
+                
+                <br><h5><strong>Insurance History</strong></h5>
+                <div class="row col-12">
+                    
+                    <div class="col-7 col-sm-7 col-lg-10">
+                        <small>
+                            
+                              <div class="custom-control custom-checkbox" >
+                                <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                                <label class="custom-control-label" for="customControlValidation1"> I hade no insurance claims last 3 years ( the other options is the opposit)</label>
+                              </div>
+                              <div class="custom-control custom-checkbox ">
+                                <input type="checkbox" class="custom-control-input" id="customControlValidation2" required checked>
+                                <label class="custom-control-label" for="customControlValidation2"> I use my car for privat use only</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customControlValidation3" required>
+                                <label class="custom-control-label" for="customControlValidation3"> the car contains an and-thett device</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customControlValidation4" required>
+                                <label class="custom-control-label" for="customControlValidation4">i agree to the terms of use</label>
+                                
+                              </div>
+                              
+                              
+                        </small>
+                    </div>
+                    <div class="col my-4 mx-3"><br>
+                        <div class="row justify-content-end "><button type="button" class="btn btn-secondary btn-sm">change</button></div>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="d-block d-sm-block d-md-none d-lg-none my-4 py-4 order-3">
+                    <div class="row bg-white px-4">
+                        
+                            <div class="col-11 col-lg-12 bg-white">
+                                <h5><strong>Driver's Details</strong></h5>
+                                <div class="row">
+                                    <div class="col-7 col-sm-7 col-lg-7">
+                                        <label for="name"><small>Main driver name</small></label><br>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+                                    <div class="col-7 col-sm-7 col-lg-5">
+                                        <label for="name"><small>Main driver age</small></label><br>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        
+                        
+                        
+                        <div class="col-12">
+                            
+                            <div class="row justify-content-end py-4 mx-1">
+                                
+                                <button type="button" class="btn btn-primary mx-2 btn-sm" style="background-color: #0065af;">+</button>
+                                <button type="button" class="btn btn-secondary btn-sm">change</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+            </div>
+            
+            <div class="col-12 col-lg-12 order-3 py-3">
+                <div class="row justify-content-end mr-3">
+                    <button type="button" class="btn btn-primary btn-lg " style="background-color: #0065af; border-radius: 0%;">Renew Insurance</button>
+                </div>
+            </div>
+            <div class="col-12 order-1 col-sm-12 order-sm-1 col-md-4 order-md-2 col-lg-4 order-lg-2 ">
+                <div class="row bg-white px-4">
+                            <div class="col-12 col-sm-12 col-lg-7">
+                                <br><h5><strong>General</strong></h5>
+                                <label for="name"><small>insurance type</small></label><br>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                    <div class="col-12 col-sm-12 col-lg-9">
+                        <label for="name"><small>insurance start date</small></label><br>
+                        <div class="row">
+                            
+                            
+                            <div class="col-3 col-lg-3"><input type="text" value="30" class="form-control" ></div>
+                            <div class="col-3 col-lg-3"><input type="text" value="09" class="form-control"></div>
+                            <div class="col-4 col-lg-4"><input type="text" value="1990" class="form-control"></div>
+                            <div class="col-1 col-lg-1"><i class="far fa-calendar alt my-3" style="font-size:20px;color:#0065af"></i></div>
+                        
+                            
+                        </div>
+                    </div>
+                    <div class="col-10"><br>
+                        <div class="row justify-content-end mb-2 "><button type="button" class="btn btn-secondary btn-sm">change</button></div>
+                    </div>
+                    
+                </div>
+                <div class="d-none d-sm-none d-md-none d-lg-block my-2 ">
+                <div class="row bg-white px-4">
+                    
+                        <div class="col-11 col-lg-12 bg-white py-1 my-1">
+                            <br><h5><strong>Driver's Details</strong></h5>
+                            <div class="row">
+                                <div class="col-7 col-sm-7 col-lg-7">
+                                    <label for="name"><small>Main driver name</small></label><br>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="col-7 col-sm-7 col-lg-5">
+                                    <label for="name"><small>Main driver age</small></label><br>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    <div class="col-12">
+                        
+                        <div class="row justify-content-end py-4 mx-1">
+                            
+                            <button type="button" class="btn btn-primary mx-2 btn-sm" style="background-color: #0065af;">+</button>
+                            <button type="button" class="btn btn-secondary btn-sm">change</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+                
+            
+            </div>
+            
+            </div>
+    
+        
+        
+    
+    
+    </form>
+    </div>
+    
+    <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>
